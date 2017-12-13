@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>WUYAX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title: SVN导出历史版本-macOS-cornerstonedate: 2017-12-13 11:00:00tags: tools  svn导出历史某一个版本，有时候想拷贝出项目某个版本的代码，又不希望覆盖现在的代码，需要用到导出历史版本。一下内容的实现是针对Mac平台下的cornerstone 来实现的  选中需要导出的项目，右键你会看到如下的界面  点击 export 你会看到如下的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WUYAX">
+<meta property="og:url" content="http://yoursite.com/2017/12/13/SVN导出历史版本-macOS-cornerstone/index.html">
+<meta property="og:site_name" content="WUYAX">
+<meta property="og:description" content="title: SVN导出历史版本-macOS-cornerstonedate: 2017-12-13 11:00:00tags: tools  svn导出历史某一个版本，有时候想拷贝出项目某个版本的代码，又不希望覆盖现在的代码，需要用到导出历史版本。一下内容的实现是针对Mac平台下的cornerstone 来实现的  选中需要导出的项目，右键你会看到如下的界面  点击 export 你会看到如下的">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2017/12/13/SVN导出历史版本-macOS-cornerstone/AA633B59-B656-4DBD-9607-3F4F830AE29D.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/13/SVN导出历史版本-macOS-cornerstone/8521F398-2AFC-46BF-8474-EE90092D2B53.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/13/SVN导出历史版本-macOS-cornerstone/DA9681F8-39DF-4391-8FDF-0545C020C713.png">
+<meta property="og:updated_time" content="2017-12-13T03:03:46.229Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WUYAX">
+<meta name="twitter:description" content="title: SVN导出历史版本-macOS-cornerstonedate: 2017-12-13 11:00:00tags: tools  svn导出历史某一个版本，有时候想拷贝出项目某个版本的代码，又不希望覆盖现在的代码，需要用到导出历史版本。一下内容的实现是针对Mac平台下的cornerstone 来实现的  选中需要导出的项目，右键你会看到如下的界面  点击 export 你会看到如下的">
+<meta name="twitter:image" content="http://yoursite.com/2017/12/13/SVN导出历史版本-macOS-cornerstone/AA633B59-B656-4DBD-9607-3F4F830AE29D.png">
+  
+    <link rel="alternate" href="/atom.xml" title="WUYAX" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">WUYAX</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-SVN导出历史版本-macOS-cornerstone" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/13/SVN导出历史版本-macOS-cornerstone/" class="article-date">
+  <time datetime="2017-12-13T02:35:00.275Z" itemprop="datePublished">2017-12-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>title: SVN导出历史版本-macOS-cornerstone<br>date: 2017-12-13 11:00:00<br>tags: tools</p>
+<hr>
+<p>svn导出历史某一个版本，有时候想拷贝出项目某个版本的代码，又不希望覆盖现在的代码，需要用到导出历史版本。<br>一下内容的实现是针对Mac平台下的cornerstone 来实现的</p>
+<ol>
+<li><p>选中需要导出的项目，右键你会看到如下的界面<br><img src="/2017/12/13/SVN导出历史版本-macOS-cornerstone/AA633B59-B656-4DBD-9607-3F4F830AE29D.png" alt=""></p>
+</li>
+<li><p>点击 <code>export</code> 你会看到如下的导出选项界面</p>
+<ol>
+<li>依此填写文件夹的名字</li>
+<li>选择文件存放路径</li>
+<li>在 <code>Revision</code> 选择你需要导出的版本就可以了<br><img src="/2017/12/13/SVN导出历史版本-macOS-cornerstone/8521F398-2AFC-46BF-8474-EE90092D2B53.png" alt=""></li>
+</ol>
+</li>
+</ol>
+<p>你可以根据版本号、日期甚至从log中选择一个版本。<br><img src="/2017/12/13/SVN导出历史版本-macOS-cornerstone/DA9681F8-39DF-4391-8FDF-0545C020C713.png" alt=""></p>
+<p>到此为止，你可以导出人意版本的项目了，而且不会破坏现有的项目。</p>
+<p><strong>多说一句：</strong> 如果你用的是小乌龟你可以访问参考链接的面的文章。</p>
+<h2 id="参考连接"><a href="#参考连接" class="headerlink" title="参考连接"></a>参考连接</h2><p><a href="http://blog.csdn.net/xiaobijia/article/details/48467381" target="_blank" rel="external">svn导出历史版本 - CSDN博客</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/13/SVN导出历史版本-macOS-cornerstone/" data-id="cjb4h30ip0000wus653vg0956" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/12/网格布局Grid-layout/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">网格布局 Grid-layout</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 10px;">css</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/12/13/SVN导出历史版本-macOS-cornerstone/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/12/网格布局Grid-layout/">网格布局 Grid-layout</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/05/hello-hexo-welcome/">hello hexo welcome</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/05/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 wuyax<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
